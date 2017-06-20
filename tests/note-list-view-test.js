@@ -1,8 +1,9 @@
-// function testHTMLView() {
-//
-//   var listView = new ListView();
-//
-//     noteList.HTMLview(note1);
-//     noteList.HTMLview(note2);
-//
-// };
+function testHTMLView() {
+
+  var view = new NoteListView();
+
+  view.noteList.addNote("Note1");  
+  assert.isEqual(view.HTMLView(), "<ul><li><div>Note1</div></li></ul>")
+};
+
+testHTMLView();
