@@ -11,6 +11,7 @@ NoteList.prototype.addNote = function (string) {
     this.list.push(string);
     return this.list
 };
+
   exports.NoteList = NoteList;
 
 })(this)
