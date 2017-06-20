@@ -1,9 +1,10 @@
 function testNoteListContainsArray() {
   var noteList = new NoteList();
   // assert.isEqual(noteList.list,[]);
-  Array.isArray(noteList.list);
+  assert.isTrue(Array.isArray(noteList.list));
+
 };
-testNoteListContainsArray()
+
 
 function testReturnNoteModels() {
   var noteList = new NoteList();
@@ -14,4 +15,15 @@ function testReturnNoteModels() {
   assert.isEqual(noteList.returnNotes(), noteList.list)
 }
 
+function testAddNoteToList() {
+  var noteList = new NoteList();
+  var note = "My new note!"
+  noteList.addNote(note);
+
+  assert.isEqual(noteList.list.length, 1);
+
+};
+
+testNoteListContainsArray()
 testReturnNoteModels()
+testAddNoteToList()
