@@ -1,6 +1,5 @@
 NoteListView = function () {
   this.noteList = new NoteList();
-
 }
 
 NoteListView.prototype.HTMLView = function () {
@@ -8,5 +7,5 @@ NoteListView.prototype.HTMLView = function () {
   for (var i = 0; i < this.noteList.list.length; i++) {
     string += "<li><div>" + this.noteList.list +"</div></li>"
   }
-  return string + "</ul>"
+  return string + "</ul>";
 };
